@@ -42,15 +42,19 @@ def convertToStringCommand(quad,goal_x,goal_y,goal_z):
 if __name__ == '__main__':
 
     commands = [];
-    num_of_agents = 2;
+    num_of_agents = 1;
     sys_arg = "send_global_goals";
 
-    # set quad number, initial positions, and goals (for now, manually)
-    # agent1 (NUC1)
-    quad="SQ01s";
-    goal_x = 0;
-    goal_y = 0;
-    goal_z = 2.0;
+    # set quad number and goals
+    quad = sys.argv[1];
+    goal_x = sys.argv[2];  
+    goal_y = sys.argv[3];  
+    goal_z = sys.argv[4];
+
+#    quad="SQ01s";
+#    goal_x = 0;
+#    goal_y = 0;
+#    goal_z = 2.0;
 
     commands.append(convertToStringCommand(quad,goal_x,goal_y,goal_z));
 

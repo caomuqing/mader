@@ -35,9 +35,10 @@ if __name__ == '__main__':
 
     # set quad number
 
-    # agent#1
-    quad="SQ01s";
-    
-    sendCommand(sys.argv[1],quad);
+    # agent
+#    quad="SQ01s";
+
+    quad = sys.argv[1];   
+    sendCommand(sys.argv[2],quad);
 
     time.sleep(1);
