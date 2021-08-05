@@ -2,10 +2,8 @@
 
 	<arg name="action" default=""/>
 
-	<node name="individual_many_kota" pkg="mader" type="hw_individual_many_kota.py" output="screen" clear_params="true" args="$(arg action)"/> 
-
+	<node name="hw_individual_many_kota" pkg="mader" type="hw_individual_many_kota.py" output="screen" clear_params="true" args="$(arg action)"/> 
 
 </launch>
-
 
 <!-- launch-prefix="xterm -e gdb -ex run args" -->
