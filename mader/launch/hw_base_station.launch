@@ -6,7 +6,7 @@
 <!-- Start Behavior Selector-->
 <node pkg="behavior_selector" type="behavior_selector_node.py" name="behavior_selector" output="screen" />
 
-<!-- Start
+<!-- Start rqt -->
 <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui" args="--perspective-file $(find mader)/rqt_cfgs/demo_interface.perspective"/>	
 
 </launch>
