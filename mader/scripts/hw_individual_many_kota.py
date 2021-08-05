@@ -36,7 +36,8 @@ if __name__ == '__main__':
     # set quad number
 
     # agent#1
-    quad="SQ01s";
+    #quad="SQ01s";
+    quad="HX15"; # for hw experiments
     
     sendCommand(sys.argv[1],quad);
 
