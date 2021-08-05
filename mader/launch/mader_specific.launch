@@ -8,19 +8,15 @@
 	<!-- Start mader commands -->
 	<node ns="$(arg quad)" name="mader_commands" pkg="mader" type="mader_commands.py" output="screen"/>
 
-	<!-- For hw experiments, we do not need either perfect tracker or sim.launch
-
-		<!-- Start Perfect tracker -->
-		<include file="$(find mader)/launch/perfect_tracker_and_sim.launch">
-	  		<arg name="quad" value="$(arg quad)"/>
-	  		<arg name="gazebo" value="false"/>
-	        <arg name="x" value="$(arg x)"/>
-	        <arg name="y" value="$(arg y)"/>
-	        <arg name="z" value="$(arg z)"/>
-	        <arg name="yaw" default="$(arg yaw)"/>
-	        <!-- <arg name="perfect_tracker" default="false"/> -->
-	 	 </include> 
-
-	-->
+	<!-- Start Perfect tracker -->
+	<include file="$(find mader)/launch/perfect_tracker_and_sim.launch">
+  		<arg name="quad" value="$(arg quad)"/>
+  		<arg name="gazebo" value="false"/>
+        <arg name="x" value="$(arg x)"/>
+        <arg name="y" value="$(arg y)"/>
+        <arg name="z" value="$(arg z)"/>
+        <arg name="yaw" default="$(arg yaw)"/>
+        <!-- <arg name="perfect_tracker" default="false"/> -->
+ 	 </include> 
 
 </launch>

@@ -18,6 +18,7 @@
 
 	</node>
 	
+	<!-- don't need for hw 
 
 	<node ns="$(arg quad)" pkg="jsk_rviz_plugins"
         type="rosconsole_overlay_text.py"
@@ -28,6 +29,8 @@
         <param name="reverse_lines" value="false" /> <!--Names of the nodes whose ros output is going to pipe to RViz -->
 
   	</node>
+
+  	-->
 
 </launch>
 
