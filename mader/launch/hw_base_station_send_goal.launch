@@ -5,7 +5,7 @@
 	<arg name="y" default="0"/>
 	<arg name="z" default="2"/>
 
-	<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="$(quad) $(arg x) $(arg y) $(arg z)"/> 
+	<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="$(arg quad) $(arg x) $(arg y) $(arg z)"/> 
 
 </launch>
 
