@@ -3,7 +3,11 @@
 	<arg name="quad" default = "HX15"/>
 	<arg name="action" default=""/>
 
+<<<<<<< HEAD
 	<node name="hw_individual_many_kota" pkg="mader" type="hw_individual_many_kota.py" output="screen" clear_params="true" args="$(arg quad) $(arg action)"/> 
+=======
+	<node name="hw_individual_many_kota" pkg="mader" type="hw_individual_many_kota.py" output="screen" clear_params="true" args="$(arg quad)" args="$(arg action)"/> 
+>>>>>>> 876693584bd4aeb9c4f537f8250c526dae36187d
 
 </launch>
 
