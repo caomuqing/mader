@@ -1,6 +1,11 @@
 <launch>
 
-	<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true"/> 
+	<arg name="quad" default="HX15"/>	
+	<arg name="x" default="0"/>
+	<arg name="y" default="0"/>
+	<arg name="z" default="2"/>
+
+	<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="$(quad)" args="$(arg x)" args="$(arg y)" args="$(arg z)"/> 
 
 </launch>
 
