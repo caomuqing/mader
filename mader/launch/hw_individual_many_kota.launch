@@ -1,8 +1,9 @@
 <launch>
 
+	<arg name="quad" default = "HX15"/>
 	<arg name="action" default=""/>
 
-	<node name="hw_individual_many_kota" pkg="mader" type="hw_individual_many_kota.py" output="screen" clear_params="true" args="$(arg action)"/> 
+	<node name="hw_individual_many_kota" pkg="mader" type="hw_individual_many_kota.py" output="screen" clear_params="true" args="$(arg quad) $(arg action)"/> 
 
 </launch>
 

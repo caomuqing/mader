@@ -1,5 +1,5 @@
 <launch>
-	<arg name="quad" default="SQ01s"/>
+	<arg name="quad" default="HX15"/>
 	
 	<!-- Start mader commands -->
 	<node ns="$(arg quad)" name="mader_commands" pkg="mader" type="mader_commands.py" output="screen"/>
