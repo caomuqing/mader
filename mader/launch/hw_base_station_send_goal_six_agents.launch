@@ -4,36 +4,35 @@
 
 	<arg name="action" default="home"/>
 
-	<group if="$(eval arg('action') == 'switch')"/>
+	<group if="$(eval arg('action') == 'switch')">
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX15 4.4 -3.4 1.8"/>
+		<node name="base_station_send_goal_hx15" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX15 4.4 -3.4 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX16 0.1 -3.4 1.8"/>
+		<node name="base_station_send_goal_hx16" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX16 0.1 -3.4 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX17 -4.2 -3.4 1.8"/>
+		<node name="base_station_send_goal_hx17" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX17 -4.2 -3.4 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX18 4.4 3.9 1.8"/>
+		<node name="base_station_send_goal_hx18" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX18 4.4 3.9 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX19 0.1 3.9 1.8"/>
+		<node name="base_station_send_goal_hx19" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX19 0.1 3.9 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX20 -4.2 3.9 1.8"/>			
+		<node name="base_station_send_goal_hx20" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX20 -4.2 3.9 1.8"/>
 
 	</group>
 
-	<group if="$(eval arg('action') == 'home')"/>
+	<group if="$(eval arg('action') == 'home')">
 
+		<node name="base_station_send_goal_hx15" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX15 -4.2 3.9 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX15 -4.2 3.9 1.8"/>
+		<node name="base_station_send_goal_hx16" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX16 0.1 3.9 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX16 0.1 3.9 1.8"/>
+		<node name="base_station_send_goal_hx17" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX17 4.4 3.9 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX17 4.4 3.9 1.8"/>
+		<node name="base_station_send_goal_hx18" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX18 -4.2 -3.4 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX18 -4.2 -3.4 1.8"/>
+		<node name="base_station_send_goal_hx19" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX19 0.1 -3.4 1.8"/>
 
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX19 0.1 -3.4 1.8"/>
-
-		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX20 4.4 -3.4 1.8"/>			
+		<node name="base_station_send_goal_hx20" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX20 4.4 -3.4 1.8"/>			
 
 	</group>
 
