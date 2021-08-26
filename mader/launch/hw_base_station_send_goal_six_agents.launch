@@ -6,8 +6,6 @@
 
 	<group if="$(eval arg('action') == 'switch')"/>
 
-		output="let's switch drone's positions"
-
 		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX15 4.4 -3.4 1.8"/>
 
 		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX16 0.1 -3.4 1.8"/>
@@ -24,7 +22,6 @@
 
 	<group if="$(eval arg('action') == 'home')"/>
 
-		output="let's go back home"
 
 		<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX15 -4.2 3.9 1.8"/>
 
