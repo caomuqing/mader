@@ -4,7 +4,7 @@
 
 	<arg name="action" default="home"/>
 
-	<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal_six_agent2.py" output="screen" clear_params="true"/>
+	<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal_six_agents2.py" output="screen" clear_params="true"/>
 
 
 
