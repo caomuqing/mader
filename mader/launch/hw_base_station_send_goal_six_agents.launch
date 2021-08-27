@@ -4,6 +4,20 @@
 
 	<arg name="action" default="home"/>
 
+	<node name="base_station_send_goal" pkg="mader" type="hw_base_station_send_goal_six_agent2.py" output="screen" clear_params="true"/>
+
+
+
+
+
+
+
+
+
+
+
+<!-- this didn't work
+
 	<group if="$(eval arg('action') == 'switch')">
 
 		<node name="base_station_send_goal_hx15" pkg="mader" type="hw_base_station_send_goal.py" output="screen" clear_params="true" args="HX15 4.4 -3.4 1.8"/>
@@ -36,6 +50,7 @@
 
 	</group>
 
+-->
 
 </launch>
 
