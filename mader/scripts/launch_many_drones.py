@@ -44,9 +44,9 @@ def convertToStringCommand(action,quad,x,y,z,goal_x,goal_y,goal_z, yaw):
 
 if __name__ == '__main__':
     # formation="sphere", "square" "circle"
-    formation="sphere"
+    formation="circle"
     commands = []
-    num_of_agents=4; 
+    num_of_agents=12; 
     radius=10;
 
 
@@ -110,7 +110,7 @@ if __name__ == '__main__':
             goal_y=radius*math.sin(theta+2*math.pi)*math.sin(phi+math.pi)
             goal_z=shift_z + radius*math.cos(phi+math.pi)
                 
-            quad="SQ0" + str(id_number) + "s";
+            quad="firefly" + str(id_number);
             id_number=id_number+1;
 
             if(formation=="square"):
